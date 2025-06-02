@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { hashPassword, createToken, validateEmail, validatePassword } from "@/lib/auth"
-import { db } from "@/lib/db"
+import { db } from "@/lib/db-vercel" // Changed import
 import { cookies } from "next/headers"
 
 export async function POST(req: NextRequest) {
