@@ -1,7 +1,7 @@
 import { writeFile, readFile, mkdir } from 'fs/promises'
 import { existsSync } from 'fs'
 import { join } from 'path'
-
+export { db } from './db-vercel'
 export interface User {
   id: string
   email: string
