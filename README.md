@@ -7,9 +7,9 @@
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-**A modern, full-stack web application built with Next.js 15, TypeScript, and advanced UI components**
+**A modern, full-stack AI chat bot web application built with Next.js 15, TypeScript, and advanced UI components. Powered by Google Gemini for AI chat, inspired by ChatGPT.**
 
-[🌟 Features](#features) • [🚀 Quick Start](#quick-start) • [📚 Documentation](#documentation) • [🤝 Contributing](#contributing)
+[🌟 Features](#features) • [🚀 Quick Start](#quick-start) • [🤖 Gemini AI Integration](#gemini-integration) • [📚 Documentation](#documentation) • [🤝 Contributing](#contributing)
 
 </div>
 
@@ -17,14 +17,16 @@
 
 ## ✨ Features
 
-- 🔐 **Secure Authentication** - JWT-based authentication with bcrypt password hashing
-- 🎨 **Modern UI Components** - Built with Radix UI primitives and Tailwind CSS
-- 🌙 **Dark/Light Theme** - Seamless theme switching with next-themes
-- 📱 **Responsive Design** - Mobile-first approach with beautiful animations
-- 🔧 **Type Safety** - Full TypeScript support for robust development
-- 🎯 **Form Handling** - React Hook Form with Zod validation
-- 📊 **Data Visualization** - Interactive charts with Recharts
-- 🎛️ **Advanced UI** - Carousels, dialogs, tooltips, and more
+- 🤖 **ChatGPT-style AI Chat** – Chat with a state-of-the-art AI (Google Gemini integration)
+- 💬 **Persistent Chat History** – Chats are tied to your account and saved
+- 🔐 **Secure Authentication** – JWT-based authentication with bcrypt password hashing
+- 🎨 **Modern UI Components** – Built with Radix UI primitives and Tailwind CSS
+- 🌙 **Dark/Light Theme** – Seamless theme switching with next-themes
+- 📱 **Responsive Design** – Mobile-first approach with beautiful animations
+- 🔧 **Type Safety** – Full TypeScript support for robust development
+- 🎯 **Form Handling** – React Hook Form with Zod validation
+- 📊 **Data Visualization** – Interactive charts with Recharts
+- 🎛️ **Advanced UI** – Carousels, dialogs, tooltips, and more
 
 ## 🛠️ Tech Stack
 
@@ -33,6 +35,7 @@
 | **Frontend** | Next.js 15, React 19, TypeScript |
 | **Styling** | Tailwind CSS, Radix UI, Lucide Icons |
 | **Authentication** | JWT, bcryptjs |
+| **AI Model** | [Google Gemini](https://ai.google.dev/gemini-api/docs) |
 | **Forms** | React Hook Form, Zod validation |
 | **Charts** | Recharts |
 | **Dev Tools** | ESLint, TypeScript |
@@ -70,6 +73,7 @@
    ```env
    JWT_SECRET=your-super-secret-jwt-key-here
    NEXT_PUBLIC_APP_URL=http://localhost:3000
+   GOOGLE_GENERATIVE_AI_API_KEY=your-gemini-api-key-here
    ```
 
 4. **Run the development server**
@@ -83,6 +87,19 @@
 
 5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000) 🎉
+
+## 🤖 Gemini Integration
+
+This project uses the [Google Gemini API](https://ai.google.dev/gemini-api/docs) to power AI chat.  
+After registering and logging in, you can chat with the Gemini-powered assistant.  
+**To enable Gemini:**  
+- Obtain your API key from Google
+- Set `GOOGLE_GENERATIVE_AI_API_KEY` in your `.env.local` file
+
+**Chat features:**
+- Natural conversational experience, inspired by ChatGPT
+- Each chat is associated with a user and stored securely
+- Supports attachments and file messages (if enabled)
 
 ## 📁 Project Structure
 
